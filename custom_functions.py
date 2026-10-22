@@ -34,3 +34,14 @@ escape_by("jumping over")
 escape_by("running around")
 escape_by("cross bridge ahead")
 
+#cross bridge
+def cross_bridge(steps):
+    for step in range(steps):
+        print("Crossed step")
+    if steps>5:
+        print("The bridge is collapsing")
+    else:
+        print("We must keep going!")
+
+cross_bridge(3)
+cross_bridge(6)

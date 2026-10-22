@@ -175,3 +175,29 @@ def run():
         print("Unknown option")
 
 run()
+
+# new code
+import random
+
+print("please enter a minimum value: ")
+min = int(input())
+print("please enter a maximum value: ")
+max = int(input())
+
+random_num = random.randrange(min, max)
+print(f"I'm thinking of a number between {min} and {max}.")
+print("can you guess what it is? ")
+
+guessed_correctly = False
+while not guessed_correctly:
+    print("Please enter a number: ")
+    guess = int(input())
+
+    if guess == random_num:
+        print("Congratulations! You guessed the number!")
+        guessed_correctly = True
+    elif guess < random_num:
+        print("Guess higher!")
+    else:
+        print("Guess lower!")
+print("Game over")
